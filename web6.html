@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string";
+        var string1 = "This is also a string";
+        console.log(string1);// the value of string1 will be re-assigned
+        let a = "u"
+        // let a = "u5"
+        //console.log(a);// will show an error coz the value of let datatype cannot be re-assigned
+        {
+            let a = "u6";
+            console.log(a);//will print variable which is within the block--> u6
+        }
+
+    console.log(a); // will print global variable--> u
+       
+        //let is a block level datatype its scope is within the block and not globally
+
+        const b = "this cannot be changed";
+       // b = "I want to change this. This cannot be changed";
+        console.log(b);
+        // we cannot re-assign the value of const
+      
+        //object
+        let employee = {
+            name: "Rohit", 
+            salary: 10,
+            age: 25,
+
+        }
+        console.log(employee);
+
+        //let names = [41,2,4,"Rohit", undefined];
+        let names = new Array(41, 2, 4,"Rohit", undefined);
+       //console.log(names);
+        //console.log(names.length);
+       // console.log(names[1]);
+       console.log(names.sort());
+       names.push("Mohi");
+       console.log(names);
+
+
+    </script>
+</body>
+</html>

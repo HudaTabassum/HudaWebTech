@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h2>This is HTML form</h2>
+    <form action="backend.java">
+        <label for="name">Name</label>
+       <div> 
+        <!-- name= "myname", myname is the name recognised by the backend -->
+         <input type="text" name="myname" id="name">
+       </div>
+       <!--name= "myid", myid is the name recognised by the backend  -->
+       <div>
+       Id: <input type="text" name="myid">
+       </div>
+       <div>
+       Role: <input type="text" name="myrole">
+       </div>
+       <div>
+           Date: <input type="date" name="mydate">
+        </div>
+        <div>
+            Bonus: <input type="number" name="mybonus">
+        </div>
+        <div>
+            Are you eligible: <input type="checkbox" name="myeligibility">
+       </div>
+       <!-- radio is used where we want to select only one option out of many -->
+       <div>
+        Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+    </div>
+    <div>
+        Write about yourself: <br> <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="car">Car</label>
+        <select name="mycar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf">Swift</option>
+        </select>
+    </div>
+    <div>
+     <input type="submit" value="Submit Now">
+     <input type="reset" value="Reset Now">
+    </div>
+    <!--select the line and alt+enter, to drag the content and move-->
+    </form>
+</body>
+</html>
